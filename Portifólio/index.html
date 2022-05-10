@@ -8,7 +8,15 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <title>MyProfile</title>
+
     <style>
+      @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
+      * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+      }
         body {
             font-weight: 600;
         }
@@ -17,9 +25,16 @@
             padding: 0.5rem;
         }
         .navbar-item {
-            padding: 10px 10px;
-            color: black;
-           
+            padding: 0 10px;
+            color: black; 
+        }
+        .navbar-start {
+          padding-left: 450px;
+          margin: auto;
+          text-transform: uppercase;
+        }
+        .navbar-brand {
+          padding: 0;
         }
         #logo {
             margin-left: 2.0rem;
@@ -29,9 +44,14 @@
             background-color: aqua;
             border-radius: 5px;
         }
+        .media-left hr:hover {
+          background-color: rgba(52, 130, 174, 0.47);
+        }
         .card {
           margin-top: 23px;
-
+        }
+        .card-header-title {
+          font-size: 1.4rem;
         }
         .footer img {
           width: 25px;
@@ -42,6 +62,18 @@
         .footer {
           background-color: rgb(205, 253, 237);
         }
+        #contato {
+          text-decoration: none;
+        }
+        .media-content {
+          text-transform: capitalize;
+          font-family:  'Merriweather', serifa;
+          font-weight: bold;
+        }
+        .media-content:hover {
+          cursor: pointer;
+        }
+        
     </style>
 </head>
 <body>
@@ -59,8 +91,7 @@
                 </a>
             </div>
 
-            <div id="navbarBasicExample" class="navbar-menu is-active">
-            </div>
+            
             <div class="navbar-start">
                 <a class="navbar-item" href="index.html"> 
                     Home
@@ -78,8 +109,8 @@
                 <div class="column">
                     <div class="card">
                         <div class="card-image">
-                          <figure class="image is-4by3">
-                            <img src="./img/59be7cd3-475d-4b9c-8348-398a197978cf.jpg" alt="Placeholder image">
+                          <figure class="image is-4by2">
+                            <img src="./img/robertoPerfil (2).png" alt="Placeholder image">
                           </figure>
                         </div>
                         <div class="card-content">
@@ -87,27 +118,41 @@
                             <div class="media-left">
                               <figure class="image is-48x48">
 
-                                <a href="https://api.whatsapp.com/send?phone=5577991556513"><img src="https://img.icons8.com/ios-filled/50/000000/whatsapp--v1.png" alt="Placeholder image"></a><hr>
+                                <a href="https://api.whatsapp.com/send?phone=5577991556513" target="_blank"><img src="https://img.icons8.com/ios-filled/50/000000/whatsapp--v1.png" alt="Placeholder image"></a><hr>
 
-                                <a href="https://github.com/ROBERTOCONRADO"><img src="https://img.icons8.com/ios-filled/50/000000/github.png"/></a><hr>
+                                <a href="https://github.com/ROBERTOCONRADO" target="_blank"><img src="https://img.icons8.com/ios-filled/50/000000/github.png"/></a><hr>
 
-                                <a href="https://www.linkedin.com/in/robertoconrado/"><img src="https://img.icons8.com/ios-filled/50/000000/linkedin-circled--v1.png"/></a><hr>
+                                <a href="https://www.linkedin.com/in/robertoconrado/" target="_blank"><img src="https://img.icons8.com/ios-filled/50/000000/linkedin-circled--v1.png"/></a><hr>
 
-                                <a href="https://www.instagram.com/bettorc/"><img src="https://img.icons8.com/ios-filled/50/000000/instagram-new--v1.png"/></a><hr>
+                                <a href="https://www.instagram.com/bettorc/" target="_blank"><img src="https://img.icons8.com/ios-filled/50/000000/instagram-new--v1.png"/></a><hr>
 
-                                <a href="https://twitter.com/beetoorc"><img src="https://img.icons8.com/glyph-neue/64/000000/twitter.png"/></a>
+                                <a href="https://twitter.com/beetoorc" target="_blank"><img src="https://img.icons8.com/glyph-neue/64/000000/twitter.png"/></a>
                                 <hr>
 
                               </figure>
                             </div>
-                            <div class="media-content">
-                              <p class="title is-4">Roberto Conrado</p>
-                              <p class="subtitle is-6">@bettorc</p>
-                              <p class="title is-4">Roberto Conrado</p>
-                              <p class="title is-4">Roberto Conrado</p>
-                              <p class="title is-4">Roberto Conrado</p>
-                              <p class="title is-4">Roberto Conrado</p>
-                              <p class="title is-4">Roberto Conrado</p>
+                            <div class="media-content"><br>
+                              <a href="https://api.whatsapp.com/send?phone=5577991556513" target="_blank">
+                                <p class="title is-4">WhatsApp</p>
+                              </a><br><br><br>
+
+                              <a href="https://github.com/ROBERTOCONRADO" target="_blank">
+                                <p class="title is-4">GitHub</p>
+                              </a><br><br><br>
+
+                              <a href="https://www.linkedin.com/in/robertoconrado/" target="_blank">
+                                <p class="title is-4">Linkedin</p>
+                              </a><br><br><br>
+
+                              <a href="https://www.instagram.com/bettorc/" target="_blank">
+                                <p class="title is-4">Instagram</p>
+                              </a><br><br><br>
+
+                              <a href="https://twitter.com/beetoorc" target="_blank">
+                                <p class="title is-4">Twitter</p>
+                              </a>
+                              
+                              
                             </div>
                           </div>
                               
@@ -122,7 +167,7 @@
                     <div class="card">
                         <header class="card-header">
                           <p class="card-header-title">
-                            Quem sou 🧑🏻
+                            <em>Quem sou:</em>&nbsp;🧑🏻
                           </p>
                           <button class="card-header-icon" aria-label="more options">
                             </span>
@@ -130,10 +175,10 @@
                         </header>
                         <div class="card-content">
                           <div class="content">
-                            Sou o Roberto! Tenho 28 anos e passei alguns anos fazendo algo que não gostava. Gosto muito é de <strong><em>tecnologia</em>!</strong><br> Estou migrando para progamação, tem muita coisa pela frente, mas um degrau de cada vez. <br><br>
+                            Sou o <strong>Roberto</strong>! Tenho 28 anos e passei alguns anos fazendo algo que não gostava. Gosto muito da área de <strong><em>tecnologia</em>!</strong><br> Estou migrando para <em>progamação</em>, tem muita coisa pela frente, mas um degrau de cada vez conquistamos grandes objetivos. <br><br>
 
-                            Hoje me encontro ligado a algum tipo de tecnologia todos os dias, e busco aprender tudo o que necessito!
-                            <a href="https://github.com/ROBERTOCONRADO">GITHUB</a>
+                            Hoje me encontro ligado a <em>tecnologia</em> diariamente, e sigo uma jornada de estudos tendo como objetivo principal absorver o máximo de conhecimento necessario não só para agregar valor, mas também para me desafiar, pois acredito que nossa mente <strong>desafiada</strong> constantemente tende a evoluir cada vez mais.
+                            <a href="https://github.com/ROBERTOCONRADO"><em>GITHUB</em></a>
                           </div>
                         </div>
                     </div>
@@ -141,7 +186,7 @@
                     <div class="card">
                         <header class="card-header">
                           <p class="card-header-title">
-                            Experiências 👨🏻‍🔧
+                            <em>Experiências:</em>&nbsp;👨🏻‍🔧
                           </p>
                           <button class="card-header-icon" aria-label="more options">
                             </span>
@@ -149,7 +194,8 @@
                         </header>
                         <div class="card-content">
                           <div class="content">
-                            Tenho experiência em <em><strong>HTML CSS, GIT</strong></em> e atualmente estudo outras tecnologias como <em><strong>JavaScript, TypeScript, React.js</strong></em>... 
+                            Atualmente tenho experiência em projetos pessoais usando <strong><em>HTML</em> <em>CSS</em>, <em>GIT</em></strong> um pouco em <em>JavaScript</em></strong>  e atualmente estudo tecnologias como <em><strong>JS, TypeScript, React.js</strong></em>... 
+
                           </div>
                         </div>
                     </div>
@@ -157,7 +203,7 @@
                     <div class="card">
                         <header class="card-header">
                           <p class="card-header-title">
-                            Objetivo 📈
+                            <em>Objetivo:</em>&nbsp;📈
                           </p>
                           <button class="card-header-icon" aria-label="more options">
                             </span>
@@ -165,7 +211,7 @@
                         </header>
                         <div class="card-content">
                           <div class="content">
-                            Tenho como obejetivo <em><strong>Desenvolvedor Full Stack</strong></em> habilitado para compreender e operar em todas as camadas do desenvolvimento de um projeto, desde a criação de servidores internos até interfaces de comunicação com o usuário final.
+                            Tenho como obejetivo <em><strong>Desenvolvedor Full Stack</strong></em> habilitado para compreender e operar em todas as camadas do desenvolvimento de um <em>projeto</em>, desde a criação de servidores internos até interfaces de comunicação com o usuário final.
                           </div>
                         </div>
                     </div>
@@ -173,7 +219,7 @@
                     <div class="card">
                       <header class="card-header">
                         <p class="card-header-title">
-                          Cursos
+                          <em>Cursos:</em>&nbsp;👇
                         </p>
                         <button class="card-header-icon" aria-label="more options">
                           </span>
@@ -188,6 +234,8 @@
                           <img src="./img/CursoVideoM3.png" alt="cursos">
                           <img src="./img/CursoOneBitCode.png" alt="cursos">
                           <img src="./img/AlgaWorksCurso.png" alt="cursos">
+                          <img src="./img/CursoPBR.png" alt="cursos">
+                          <img src="./img/CursoJSTS.png" alt="cursos">
                         </div>
                       </div>
                   </div>
@@ -202,10 +250,10 @@
             <strong>&copy;Roberto Conrado</strong>👨🏻‍💻 
             
           </p>
-          <img src="https://img.icons8.com/fluency-systems-filled/48/000000/send-mass-email.png"/>
-            robertoconradorc@gmail.com
+          <a id="contato" href="mailto:robertoconradorc@gmail.com">📩robertoconradorc@gmail.com</a>
         </div>
       </footer>
+      <script src="script.js"></script>
 </body>
 </html>
 

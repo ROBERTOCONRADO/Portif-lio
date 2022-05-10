@@ -8,13 +8,21 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <title>MyProfile</title>
+    <style>
+        div .contents {
+          color: rgba(255, 0, 0, 0.685);
+          font-weight: bold;
+          margin-top: 20px;
+          
+        }
+    </style>
 </head>
 <body>
     <header>
         <nav class="navbar" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
                 <a class="navbar-item" href="index.html">
-                <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+                <img src="./img/logo.contato.png" width="112" height="28">
                 </a>
 
                 <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -43,8 +51,8 @@
                 <div class="column">
                     <div class="card">
                         <div class="card-image">
-                          <figure class="image is-4by3">
-                            <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                          <figure class="image is-4by2">
+                            <img src="../Portifólio/img/contact.img.png" alt="Placeholder image">
                           </figure>
                         </div>
                         <div class="card-content">
@@ -59,14 +67,12 @@
                               <p class="subtitle is-6">@bettorc</p>
                             </div>
                           </div>
-                          <span class="tag is-dark is-medium">Estudante de JavaScript</span>
+                          <span class="tag is-dark is-medium">Estudante de FrontEnd</span>
                       
-                          <div class="content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                            <a href="#">#css</a> <a href="#">#responsive</a>
+                          <div class="contents">
+                            <time>Do dia 10/02/2022</time> 
                             <br>
-                            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                            <time id="time"></time>
                           </div>
                         </div>
                       </div>
@@ -174,5 +180,6 @@
             </div>
         </div>
     </section>
+    <script src="./script.js"></script>
 </body>
 </html>
