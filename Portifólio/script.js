@@ -75,6 +75,10 @@ function getNomeMes(numeroMes) {
     }
 }
 
+function zeroEsquerda (num) {
+    return num >= 10 ? num : `0${num}`;
+}
+
 function criaData(data) {
     const diaSemana = data.getDay();
     const numeroMes = data.getMonth();
@@ -84,7 +88,7 @@ function criaData(data) {
 
     return ( 
         `A ${nomeDia}, ${data.getDate()} de ${nomeMes}` + 
-        ` de ${data.getFullYear()}, ${data.getHours()} Horas ${data.getMinutes()} Minutos`)
+        ` de ${data.getFullYear()}, ${zeroEsquerda(data.getHours())} Horas ${zeroEsquerda(data.getMinutes())} Minutos`)
 }
 
 time.innerHTML = criaData(data);
@@ -92,17 +96,19 @@ time.innerHTML = criaData(data);
 
 
 
+//FORMA MAIS SIMPLES//
 
 
+/*
+const time = document.querySelector('.contents #time');
+const data = new Date();
+const opcoes = {
+    dateStyle: 'full',
+    timeStyle: 'short'
+};
 
-
-
-
-
-
-
-
-
+time.innerHTML = data.toLocaleString('pt-BR', opcoes)
+*/
 
 
 
