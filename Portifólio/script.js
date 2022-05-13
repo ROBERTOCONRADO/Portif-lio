@@ -96,6 +96,9 @@ time.innerHTML = criaData(data);
 
 
 
+
+
+
 //FORMA MAIS SIMPLES//
 
 
